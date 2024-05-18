@@ -1,3 +1,5 @@
+html { overflow-y: scroll; }
+
 body {
     font-family: 'Noto Serif JP', serif;
     background-color: #ffffff;
@@ -9,7 +11,7 @@ body {
     height: 12%;
     display: flex;
     margin-right: 100px;
-    margin-top: 5px;
+    margin-top: 15px;
 
 }
 
@@ -36,6 +38,13 @@ body {
     z-index: 1;
 
 }
+
+#bag
+{
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
 
 .main-menu>li {
     display: inline-flex;
@@ -318,4 +327,121 @@ button:active {
     top: 80px;
     margin-left: 110px;
     
+}
+
+
+.test
+{
+    color: black;
+}
+
+#sortSelect
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -100px;
+    border-radius: 20px;
+}
+
+#SelectStatistic
+{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    /* margin-top: 100px; */
+}
+
+#statistic
+{
+    display: none;
+}
+
+
+
+.default
+{
+    display: none;
+}
+
+#basket-total
+{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+#clear
+{
+    font-size: 14px;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.3s ease;
+    margin-bottom: 13px;
+
+}
+#clear:hover{
+        color: red;
+        background-color: rgba(0, 0, 0, 0);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0);
+        transform: translateY(0px);
+    
+
+}
+
+.newss
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.zagolovok
+{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.date
+{
+    text-align: center;
+    font-size: 15px;
+    margin-top: -20px;
+    margin-bottom: 0;
+
+}
+
+.news-text>p{
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#scroll-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    font-size: 16px;
+    background-color:rgb(0, 0, 0);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 9999;
+  }
+  
+  #scroll-to-top-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 10);
+    transform: translateY(-2px);
 }
