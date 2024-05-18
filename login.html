@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Log in</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
+</head>
+<body">
+    
+<ul class="main-menu">
+    <img class="mikro-img" src="images/icon.png" alt="bug" >
+    
+    <li class="active"><a href="#url" class = "menu_text" class = "text_main">Головна</a></li>
+    <li class="menu-children">
+        <a href="#url" class = "menu_text">Послуги</a>
+        <ul>
+            <li><a href="#url ">Покупки</a></li>
+            <li><a href="#url">Улюблене</a></li>        
+        </ul>
+    </li>
+    <li><a href="news.html" class = "menu_text">Новини</a></li>
+    <li><a href="#url" class = "menu_text">Галерея</a></li>  
+    <li class="menu-children" class = "menu_text">  
+        <a href="#url" class = "menu_text">Контакти</a>
+        <ul>
+            <li><a href="#url">Запити</a></li>
+            <li><a href="#url">Про нас</a></li>        
+        </ul>     
+        <li><a href = "basket.html"><img id = "bag" src = "images/shopping-bag.png"></a></li>
+        <li class = "active"><a href = "#"><img id = "profile" src = "images/profile.png"></a></li>
+    </ul>
+
+
+<div class = "container">
+    <h1 >Log in</h1>
+
+    <form>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" minlength="5" maxlength="15" id="password" name="password" required>
+
+        <button id = "entry" type="submit">Entry</button>
+    </form>
+
+    <div class = "other_links">
+       <a href = "#"> <p style = "margin-right: 50px; color:rgb(0, 0, 0);">Forget password?</p></a>
+       <a href = "authorization.html"> <p style = "color: black">Authorization</p></a>
+    </div>    
+
+     
+
+</div>
+
+
+<script src = "login.js"></script>
+</body>

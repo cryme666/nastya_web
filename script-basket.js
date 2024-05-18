@@ -3,6 +3,12 @@ const imageGallery = document.querySelector(".image-gallery");
 const clear = document.getElementById("clear");
 const Statistic = document.getElementById("statistic");
 
+if(localStorage.getItem("log-in") != "true") 
+  {
+    window.location.href = "./login.html";
+    alert("To place an order, log in to your profile!")
+  }
+
 
 let barColors = [
   "rgba(0,0,255,0.5)",
